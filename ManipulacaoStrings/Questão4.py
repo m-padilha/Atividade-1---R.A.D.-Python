@@ -2,8 +2,8 @@
 import os
 print(os.getcwd())
 
-with open('repeticao.txt', "r", encoding="utf-8") as f:
-    conteudo = f.read()
+with open('repeticao.txt', "r", encoding="utf-8") as arquivo:
+    conteudo = arquivo.read()
 
 palavras = conteudo.split()
 
