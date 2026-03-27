@@ -2,12 +2,12 @@
 import os
 print(os.getcwd())
 
-with open('substituicao.txt', "r", encoding="utf-8") as f:
-    conteudo = f.read()
+with open('substituicao.txt', "r", encoding="utf-8") as arquivo:
+    conteudo = arquivo.read()
 
 conteudo_modificado = conteudo.replace(" ", "_")
 
-with open('substituicao.txt', "w", encoding="utf-8") as f:
-    f.write(conteudo_modificado)
+with open('substituicao.txt', "w", encoding="utf-8") as arquivo:
+    arquivo.write(conteudo_modificado)
 
 print("Arquivo modificado com sucesso!")
